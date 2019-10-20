@@ -1,5 +1,7 @@
-let friends = require("../friends.js")
+let friends = require("./../data/friends")
 
+
+module.exports = function(app) {
 app.get("/api/friends", function(req, res) {
     return res.json(friends);
   });
@@ -14,3 +16,4 @@ app.post("/api/friends", function(req, res) {
     // We then display the JSON to the users
     res.json(newfriend);
   });
+}
