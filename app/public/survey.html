@@ -214,9 +214,10 @@
           ]
         };
 
-        $.post("/api/friends", newUser, function(data) {
-        $("#match-name").text(data.name);
-        $("#match-img").attr("src", data.photo);
+        $.post("/api/friends", newUser) 
+        .then(function(data) {
+        $("#match-name").text(data.friendMatchName);
+        $("#match-img").attr("src", data.friendMatchImage);
         $("#results-modal").modal("toggle");
       })
     }
