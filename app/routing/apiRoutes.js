@@ -11,7 +11,7 @@ app.post("/api/friends", function(req, res) {
     let userAnswers = newUser.scores;
     let friendMatchName = "";
     let friendMatchImage = "";
-    let totalDifference = 1000
+    let totalDifference = 100000
 
     for (let i = 0; i < friends.length; i++) {
       let scoreDifference = 0;

@@ -5,15 +5,9 @@
   <meta charset="UTF-8">
   <title>FriendFinder</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-  <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
@@ -23,11 +17,11 @@
 
   <div class="container">
 
-    <h2>Questions</h2>
+    <h1 class="font-weight-bold text-info">Questions</h1>
     <h4>Please fill out all Questions below</h4>
     <hr>
 
-    <h3><strong>About You</strong></h3>
+    <h3 class="font-weight-bold text-info">About You</h3>
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
@@ -36,7 +30,7 @@
 
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 1</h3>
     <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
     <select class="choice" id="q1">
       <option value=""></option>
@@ -47,7 +41,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 2</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 2</h3>
     <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
     <select class="choice" id="q2">
       <option value=""></option>
@@ -59,7 +53,7 @@
     </select>
 
 
-    <h3><strong>Question 3</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 3</h3>
     <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
     <select class="choice" id="q3">
       <option value=""></option>
@@ -71,7 +65,7 @@
     </select>
 
 
-    <h3><strong>Question 4</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 4</h3>
     <h4>You rarely do something just out of sheer curiosity.</h4>
     <select class="choice" id="q4">
       <option value=""></option>
@@ -83,7 +77,7 @@
     </select>
 
 
-    <h3><strong>Question 5</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 5</h3>
     <h4>People can rarely upset you.</h4>
     <select class="choice" id="q5">
       <option value=""></option>
@@ -95,7 +89,7 @@
     </select>
 
 
-    <h3><strong>Question 6</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 6</h3>
     <h4>It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="choice" id="q6">
       <option value=""></option>
@@ -107,7 +101,7 @@
     </select>
 
 
-    <h3><strong>Question 7</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 7</h3>
     <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
     <select class="choice" id="q7">
       <option value=""></option>
@@ -118,7 +112,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 8</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 8</h3>
     <h4>You rarely get carried away by fantasies and ideas.</h4>
     <select class="choice" id="q8">
       <option value=""></option>
@@ -129,7 +123,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 9</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 9</h3>
     <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
     <select class="choice" id="q9">
       <option value=""></option>
@@ -140,9 +134,9 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 10</strong></h3>
+    <h3 class="font-weight-bold text-info">Question 10</h3>
     <h4>You feel more energetic after spending time with a group of people.</h4>
-    <select class="choice" id="q10">
+    <select class="choice mb-5" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -153,9 +147,10 @@
 
     <br>
     <br>
+    <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-info btn-lg btn-block" id="submit">
+    <button type="submit" class="mt-5 btn btn-info btn-lg btn-block" id="submit">
      Submit</button>
 
     <hr>
@@ -172,11 +167,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title font-weight-bold text-info">Best Match</h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="" alt="">
+          <img id="match-img" src="" alt="" height="200px" width=auto>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
